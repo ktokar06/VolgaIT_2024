@@ -17,7 +17,7 @@ public class BaseTest {
         driver.manage().window().maximize();
 
         GoogleMainPage googlePage = new GoogleMainPage(driver);
-        googlePage.searchGame();
+        googlePage.navigateToGame();
 
         gamePage = new TicTacToeGamePage(driver);
         gamePage.selectPlayWithFriend();
